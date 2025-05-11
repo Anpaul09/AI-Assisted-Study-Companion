@@ -101,8 +101,8 @@ AI-Study-Companion/
 
 ## 👥 **Contributors**
 - **James Liu** – Documentation & QA
-- **Kleant Topalli** – Team Lead / Presentation
-- **Aniruddah Paul** – Backend Developer
+- **Kleant Topalli** – Presentation
+- **Aniruddah Paul** – Team Lead /Backend Developer.
 - **Eunice Shobowale** – Frontend Developer
 
 ## **Support**
