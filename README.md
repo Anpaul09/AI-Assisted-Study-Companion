@@ -64,7 +64,7 @@ AI-Study-Companion/
 ### Installation
 1. Clone the repo
    ```bash
-   git clone https://github.com/KToppers/AI-Study-Assistant.git
+   git clone (https://github.com/Anpaul09/AI-Assisted-Study-Companion.git)
    cd AI-Study-Assistant/Frontend
 
 
