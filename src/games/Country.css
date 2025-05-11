@@ -1,0 +1,324 @@
+/* This is for the buttons listed below */
+.countryStartButton,
+.countryExitButton,
+.countryGameNext,
+.countryResetButton,
+.continent-button,
+.countryGamePopup,
+.countryGameCancel {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+/* This is only for the start button */
+.countryStartButton {
+  background-color: #1f89e0;
+  color: white;
+}
+
+/* This is only for the start button when it is hovered */
+.countryStartButton:hover {
+  background-color: #1976d2;
+}
+
+/* This is only for the exit button */
+.countryExitButton {
+  background-color: #ec3629;
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* This is only for the exit button when it is hovered */
+.countryExitButton:hover {
+  background-color: #d32f2f;
+}
+
+/* This is for the main game container */
+.countryGame {
+  text-align: center;
+   /* background-color: black; */
+  /* background-color: #fff; */
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-right: 40px;
+}
+
+/* This is for the country flag */
+.flag img {
+  width: 250px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* This is for the country flag options */
+.countryGameOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* This is for the country flag options */
+.countryGameOption {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  background-color: black;
+  /* background-color: #f9f9f9; */
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  color: #64DAE5;
+}
+
+/* This is for the country flag option that is correct */
+.countryGameOption.correct {
+  background-color: #38b53c;
+  color: white;
+  border-color: #4caf50;
+}
+
+/* This is for the country flag option that is incorrect */
+.countryGameOption.incorrect {
+  background-color: #ec3629;
+  color: white;
+  border-color: #f44336;
+}
+
+/* This is for the next and reset buttons */
+.countryGameNext,
+.countryResetButton {
+  background-color: #1f89e0;
+  color: white;
+}
+
+/* This is for the next and reset buttons when hovered over */
+.countryGameNext:hover,
+.countryResetButton:hover {
+  background-color: #1976d2;
+}
+
+/* This is for the country flag start page */
+.countryGameStartPage {
+  text-align: center;
+  margin-top: 200px;
+}
+
+/* This is for the country flag start page continent buttons */
+.continent-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* This is for the country flag start page continent buttons that is selected */
+.continent-button.selected {
+  background-color: #1f89e0;
+  color: white;
+}
+
+/* This is for the result page */
+.countryGameResultPage {
+  text-align: center;
+  margin-top: 120px;
+}
+
+/* This is for the result page flag list */
+.countryGameResultList {
+  margin-top: 20px;
+}
+
+/* This is for the result page flag item */
+.countryGameResultItem {
+  margin-bottom: 20px;
+}
+
+/* This is for the result page flag image */
+.countryGameResultFlag {
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* This is for the game's progress circles */
+.progress-circles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* This is for a circle */
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #1f89e0;
+  background-color: transparent;
+}
+
+/* This is for a circle when filled (when a question is answered) */
+.circle.filled {
+  background-color: #1f89e0;
+}
+
+/* This is for the game back button */
+.countryGameBack {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #11A37F;
+  /* #f7fafc; */
+  /* color: #4a5568; */
+  color: var(--light-text);
+  border: 1px solid #11A37F;
+  /* color: #1f89e0; */
+}
+
+/* This is for the popup message */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* This is for the popup content */
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* This is for the popup content p */
+.popup-content p {
+  color: black;
+}
+
+/* This is for the popup buttons */
+.popup-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* margin-top: 10px; */
+}
+
+/* This is for the popup */
+.countryGamePopup {
+  background-color: #49a1ea;
+  color: white;
+}
+
+/* This is for the popup when hovered */
+.countryGamePopup:hover {
+  background-color: #1976d2;
+}
+
+/* This is for the game cancel button */
+.countryGameCancel {
+  background-color: #ec3629;
+  color: white;
+}
+
+/* This is for the game cancel button when hovered */
+.countryGameCancel:hover {
+  background-color: #d32f2f;
+}
+
+/* This is for the pop up content message */
+.popup-contentmessage {
+  color: black;
+}
+
+/* Allowing the page to be responsive */
+@media (max-width: 768px) {
+  .countryGame {
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .countryGameBack {
+  margin-bottom: 30px;
+  margin-left: -30px;
+}
+
+  .flag img {
+    width: 200px;
+  }
+
+  .countryGameOption {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .countryGameStartPage,
+  .countryGameResultPage {
+    margin-top: 100px;
+  }
+
+  .continent-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countryGameResultFlag {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .countryGame {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .flag img {
+    width: 150px;
+  }
+
+  .countryGameOption {
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.9rem;
+  }
+
+  .countryGameStartPage,
+  .countryGameResultPage {
+    margin-top: 50px;
+  }
+
+  .countryGameResultFlag {
+    width: 60px;
+  }
+
+  .circle {
+    width: 15px;
+    height: 15px;
+  }
+}

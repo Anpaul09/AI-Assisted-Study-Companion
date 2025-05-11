@@ -1,0 +1,175 @@
+/* This is for the main game container */
+.vocabquiz {
+  max-width: 800px;
+  margin: 80px auto; 
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* This is for the game h1, h2, h3 */
+.vocabquiz h1,
+.vocabquiz h2,
+.vocabquiz h3 {
+  color: #64DAE5;
+  /* color: #bb86fc; */
+  text-align: center;
+}
+
+/* This is for the game start screen */
+.vocabquiz-start-screen {
+  text-align: center;
+  padding: 30px;
+}
+
+/* This is for the game score screen */
+.vocabquiz-results-screen {
+  text-align: center;
+  padding: 30px;
+}
+
+/* This is for the game start and restart buttons */
+.vocabquiz-start-button,
+.vocabquiz-restart-button {
+  padding: 12px 30px;
+  background-color: #64DAE5;
+  /* background-color: #bb86fc; */
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin: 10px;
+  transition: all 0.3s;
+}
+
+/* This is for the game start and restart buttons when hovered over */
+.vocabquiz-start-button:hover,
+.vocabquiz-restart-button:hover {
+  background-color: #64DAE5;
+  /* background-color: #9a67ea; */
+}
+
+/* This is for the game back button */
+.vocabquiz-back-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #11A37F;
+  color: var(--light-text);
+  border: 1px solid #11A37F;
+}
+
+
+/* this is for the loading state */
+.vocabquiz-loading {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 50px 0;
+  color: #64DAE5;
+  /* color: #bb86fc; */
+}
+
+/* this is for the quiz header */
+.vocabquiz-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 5px;
+}
+
+/* this is for the quiz definition of the word */
+.vocabquiz-definition {
+  margin: 30px 0;
+  padding: 20px;
+  background-color: #353535;
+  border-radius: 8px;
+  /* border-left: 4px solid #64DAE5; */
+  /* border-left: 4px solid #bb86fc; */
+}
+
+/* this is for the quiz part of speech */
+.vocabquiz-part-of-speech {
+  font-style: italic;
+  color: #a0a0a0;
+  margin-top: 5px;
+}
+
+/* this is for the quiz options */
+.vocabquiz-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+/* this is for the quiz options button */
+.vocabquiz-option-button {
+  padding: 15px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+  min-height: 60px;
+}
+
+/* this is for the quiz options when hovered on */
+.vocabquiz-option-button:hover:not(:disabled) {
+  background-color: #555555;
+}
+
+/* this is for the quiz options when disabled */
+.vocabquiz-option-button:disabled {
+  cursor: not-allowed;
+}
+
+/* this is for the quiz options if it correct */
+.vocabquiz-correct {
+  background-color: #4caf50 !important;
+}
+
+/* this is for the quiz options if it incorrect */
+.vocabquiz-incorrect {
+  background-color: #f44336 !important;
+}
+
+/* this is for the game message  */
+.vocabquiz-message {
+  min-height: 24px;
+  margin: 20px 0;
+  text-align: center;
+  font-weight: bold;
+  color: #64DAE5;
+  /* color: #bb86fc; */
+}
+
+/* this is for the quiz timer */
+.vocabquiz-timer {
+  color: #ff7043;
+  font-weight: bold;
+}
+
+/* this is for the quiz score */
+.vocabquiz-score {
+  color: #4caf50;
+  font-weight: bold;
+}
+
+/* this is for the quiz question count */
+.vocabquiz-question-count {
+  color: #64DAE5;
+  /* color: #bb86fc; */
+}

@@ -1,0 +1,43 @@
+/* ThankYou.css */
+
+/* This is for the container of the thank-you container */
+.thank-you-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+    text-align: center;
+  }
+
+/* This is for the thank you message */
+  .thank-you-message {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* The thank you message h2 */
+  .thank-you-message h2 {
+    margin-bottom: 10px;
+  }
+  
+   /* The thank you button h2 */
+  .thank-you-message button {
+    background-color: black;
+    color: #37e9fa;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* .thank-you-message button:hover {
+    background-color: #94eded;
+     color: white; 
+  } */
+  

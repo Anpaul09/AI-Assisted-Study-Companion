@@ -1,0 +1,186 @@
+/* This is for the container for this game page */
+.fact-game {
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  position: relative;
+}
+
+/* This is for this game back button */
+.factGameBack {
+  padding: 8px 16px;
+  border: none;
+  margin-right: 1300px;
+  /* margin-left: -500px; */
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #11A37F;
+  /* #f7fafc; */
+  /* color: #4a5568; */
+  color: var(--light-text);
+  border: 1px solid #11A37F;
+  /* color: #1f89e0; */
+}
+
+/* This is for this game back button */
+.factgameback-button {
+  position: absolute;
+  left: 20px;
+  padding: 8px 16px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* This is for this game back button when hovered */
+.factgameback-button:hover {
+  background-color: #5a6268;
+  transform: translateX(-3px);
+}
+
+/* This is for this game h1 */
+.factgame-game h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  /* color: #343a40; */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* This is for this game fact container */
+.factgamefact-container {
+  margin: 1.5rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 90%;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* This is for this game fact */
+.factgamefact {
+  font-size: 1.3rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* This is for this game buutons for both the fact and fiction */
+.factgamebuttons {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* This is for this game fact */
+.factgame-buttonb {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  background-color: #4caf50;
+  color: white;
+} 
+
+/* This is for this game fiction */
+.factgame-buttonu {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  background-color: #f44336;
+  color: white;
+} 
+
+/* This is for this game button when hovered */
+.factgameback-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.factgameback-button:active {
+  transform: translateY(0);
+}
+
+/* This is for this game answer it let the user know if the answer is wrong or correct */
+.factgamefeedback {
+  margin: 1rem;
+  font-size: 1.5rem;
+  color: rgb(115, 255, 0);
+  min-height: 2rem;
+}
+
+
+.factgamestats {
+  display: flex;
+  gap: 2rem;
+  /* color: white; */
+  /* margin-top: 1rem; */
+}
+
+/* This is for this game score and how many questions are left */
+.factgamescore, .factgameremaining {
+  font-size: 1.1rem;
+  color: #64DAE5;
+  /* color: #495057; */
+}
+
+/* This is for this game game over */
+.factgamegame-over {
+  text-align: center;
+}
+
+/* This is for this game final score */
+.factgamefinal-score {
+  font-size: 1.3rem;
+  margin: 1.5rem 0;
+  color: #a0f484;
+  /* color: #343a40; */
+}
+
+/* This is for this game play again button */
+.factgameplay-again {
+  background-color: #2196f3;
+  color: white;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.2rem;
+  border-radius: 40px;
+  border-color: #2196f3;;
+}
+
+
+/* Allowing the page to be responsive */
+@media (max-width: 768px) {
+  .factGameBack {
+    margin-left: -350px;
+    margin-right: 0;
+  }
+}

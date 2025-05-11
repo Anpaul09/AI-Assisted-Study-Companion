@@ -1,0 +1,265 @@
+/* Importing Gotham Light font */
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('./gotham-light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Main container with background */
+.login-container {
+  font-family: 'Gotham Light', Arial, sans-serif;
+  min-height: 100vh;
+  width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./astro.jpg') !important;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.login-container::before {
+  /* content: ''; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: rgba(0, 0, 0, 0.7); Dark overlay with blur effect */
+  /* backdrop-filter: blur(8px); */
+  z-index: 1;
+}
+
+/* Login form container */
+.login-form-container {
+  position: relative;
+  z-index: 2;
+  width: 400px;
+  background-color: rgba(20, 20, 20, 0.85);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 30px;
+}
+
+/* Login title */
+.login-title {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.login-title h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+
+/* Login tabs */
+.login-tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+}
+
+.login-tab {
+  flex: 1;
+  text-align: center;
+  padding: 15px 0;
+  color: #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.login-tab:hover {
+  color: #fff;
+}
+
+.login-tab.active {
+  color: #fff;
+  border-bottom: 2px solid #00aaff;
+}
+
+/* Login form */
+.login-form {
+  padding-bottom: 30px;
+}
+
+/* Input container to align icon and input */
+.signupform-group {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.input-icon {
+  color: #888;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.signupform-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+
+.signupform-group input::placeholder {
+  color: #777;
+}
+
+/* Password toggle */
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  color: #888;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Error messages */
+.error-message {
+  color: #ff4d4d;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Password requirements */
+.password-requirements {
+  margin-bottom: 20px;
+}
+
+.password-requirements ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+.password-requirements li {
+  color: #888;
+  font-size: 12px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.password-requirements li::before {
+  content: "×";
+  position: absolute;
+  left: 0;
+  color: #ff4d4d;
+}
+
+.password-requirements li.valid {
+  color: #aaffc3;
+}
+
+.password-requirements li.valid::before {
+  content: "✓";
+  color: #00ff7f;
+}
+
+/* Login options */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.remember-me input {
+  margin-right: 8px;
+}
+
+.forgot-password a {
+  color: #00aaff;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #33bbff;
+  text-decoration: underline;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #00aaff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0088cc;
+}
+
+.login-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+  .login-form-container {
+    width: 90%;
+    max-width: 350px;
+  }
+  
+  .login-title h1 {
+    font-size: 24px;
+  }
+  
+  .login-tab {
+    font-size: 14px;
+  }
+  
+  .signupform-group {
+    padding: 10px;
+  }
+  
+  .signupform-group input {
+    font-size: 14px;
+  }
+  
+  .login-button {
+    padding: 12px;
+    font-size: 14px;
+  }
+  
+  .password-requirements ul {
+    grid-template-columns: 1fr;
+  }
+}

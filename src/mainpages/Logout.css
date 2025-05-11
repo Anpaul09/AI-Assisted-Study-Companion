@@ -1,0 +1,113 @@
+/* Importing fonts */
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('../LoginHome/gotham-light.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('../LoginHome/gotham-book.otf') format('opentype');
+}
+
+/* The logout main page container */
+.logOutMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 220px;
+}
+
+/* The logout message */
+.logOut-message {
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background: #222;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* The logout message h2 */
+.logOut-message h2 {
+  font-size: 24px;
+  font-family: 'Gotham Book', sans-serif;
+  color: #10a37f;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+/* The logout message p */
+.logOut-message p {
+  font-size: 16px;
+  font-family: 'Gotham Light', sans-serif;
+  color: #e0e0e0;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* the buttons */
+.logOut-Buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* for both buttons */
+.confirm-Button,
+.cancel-Button {
+  flex: 1;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Gotham Book', sans-serif;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* The react-icons styles */
+.button-icon {
+  font-size: 18px;
+}
+
+/* the confirm button */
+.confirm-Button {
+  background-color: #10a37f;
+  color: white;
+}
+
+/* when the confirm button is hover over */
+.confirm-Button:hover {
+  background-color: #0d8c6d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(16, 163, 127, 0.3);
+}
+
+/* the cancel button */
+.cancel-Button {
+  background-color: #333;
+  color: #e0e0e0;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* when the cancel button is hover over */
+.cancel-Button:hover {
+  background-color: #3a3a3a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Both buttons animation  */
+.confirm-Button:active,
+.cancel-Button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}

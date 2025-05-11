@@ -1,0 +1,210 @@
+/* This is for the quiz details page */
+.quiz-detail-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 100px;
+}
+
+/* This is for the quiz details back button */
+.quizback-button {
+  background: #6a5acd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+/* This is for the quiz details back button */
+.quizdetailback-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 1.5rem; */
+  padding: 0.75rem 1.5rem;
+  background-color: #11A37F;
+  /* #f7fafc; */
+  /* color: #4a5568; */
+  color: var(--light-text);
+  border: 1px solid #11A37F;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+  margin-left: -290px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* This is for the quiz details header */
+.quiz-detail-header {
+  margin-bottom: 30px;
+}
+
+/* This is for the quiz details header h1 */
+.quiz-detail-header h1 {
+  /* color: #2d3436; */
+  margin-bottom: 10px;
+}
+
+/* This is for the quiz details synopsis */
+.quiz-detail-synopsis {
+  color: #37E9FB;
+  /* color: #666; */
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* This is for the quiz details question */
+.quiz-detail-questions-container {
+  margin-top: 30px;
+}
+
+/* This is for the quiz details question card */
+.quiz-detail-question-card {
+  /* background: white; */
+  background: black; 
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* This is for the quiz details question text */
+.quiz-detail-question-text {
+  color: #2d3436;
+  margin-top: 0;
+}
+
+/* This is for the quiz details answer options */
+.quiz-detail-answers-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+/* This is for the quiz details answer */
+.quiz-detail-answer-item {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #111010;
+  /* background: #f8f9fa; */
+  border-left: 4px solid #ddd;
+}
+
+/* This is for the quiz details correct answer */
+.quiz-detail-correct-answer {
+  background: #e8f5e9;
+  border-left-color: #4caf50;
+}
+
+/* This is for the quiz details answer icon */
+.quiz-detail-answer-icon {
+  font-size: 16px;
+}
+
+/* This is for the quiz details correct icon */
+.quiz-detail-correct-icon {
+  color: #4caf50;
+}
+
+/* This is for the quiz details incorrect icon */
+.quiz-detail-incorrect-icon {
+  color: #f44336;
+  opacity: 0.7;
+}
+
+/* This is for the quiz details explanation */
+.quiz-detail-explanation-box {
+  padding: 15px;
+  /* background: #f1f8fe; */
+  background: #111010; 
+  border-radius: 5px;
+  border-left: 4px solid #2196f3;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+/* This is for the quiz details error message */
+.quiz-detail-error-message {
+  text-align: center;
+  padding: 40px;
+  color: #f44336;
+}
+
+/* Allowing the page to be responsive */
+@media (max-width: 768px) {
+  .quiz-detail-container {
+    padding: 20px;
+  }
+
+  .quizdetailback-button {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .quiz-detail-header h1 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .quiz-detail-synopsis {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .quiz-detail-question-card {
+    padding: 15px;
+  }
+
+  .quiz-detail-answer-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .quiz-detail-explanation-box {
+    font-size: 0.9rem;
+  }
+
+  .play-quiz-button {
+    margin: 30px auto;
+    display: block;
+    min-width: unset;
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .quiz-detail-container {
+    padding: 15px;
+  }
+
+  .quiz-detail-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .quiz-detail-synopsis {
+    font-size: 0.95rem;
+  }
+
+  .quiz-detail-answer-item {
+    font-size: 0.95rem;
+  }
+
+  .quiz-detail-question-title {
+    font-size: 1rem;
+  }
+}

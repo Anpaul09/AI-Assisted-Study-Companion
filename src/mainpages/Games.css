@@ -1,0 +1,110 @@
+/* Games.css */
+
+/* This is for the container of the game page === */
+.gamesjspage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+/* Each game design */
+.gamesIcon {
+  background-color: black;
+  /* background-color: #fff; */
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  overflow: hidden;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+/* Hovering over a game */
+.gamesIcon:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* The game picture */
+.gamesPicture {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #64DAE5;
+}
+
+/* The game name style */
+.gamesName {
+  font-size: 1.5em;
+  color: white;
+  /* color: #333; */
+  margin: 15px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family:'Courier New', Courier, monospace;
+
+}
+
+
+/* Allowing the page to be responsive */
+  @media (max-width: 768px) {
+  .gamesMain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+ .gamesMain {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.gameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px 12px 0 0;
+}
+
+.gamesIcon:hover .gameOverlay {
+  opacity: 1; 
+}
+
+.playButton {
+  /* background-color: #64DAE5; */
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.playButton:hover {
+  background-color: #4fb8c7;
+  transform: scale(1.05);
+}

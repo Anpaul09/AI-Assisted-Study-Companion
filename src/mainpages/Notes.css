@@ -1,0 +1,207 @@
+/* 
+.note-item {
+    border: 1px solid #ddd;
+    padding: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative; 
+   
+  }
+
+  
+
+ 
+  .ql-container.ql-snow {
+    height: auto !important;
+
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+
+
+
+  .delete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .delete-modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .confirm-delete {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .cancel-delete {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  } */
+
+
+
+
+  .notes-panel {
+    margin-top: 110px; /* Add space at the top */
+    /* padding: 15px; */
+    padding: 20px;
+    width: 95%;
+    background-color: #111010;
+    /* background-color: black; */
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .note-item {
+    border: 1px solid #ddd;
+    padding: 35px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    /* background-color: #fff; */
+    position: relative;
+  }
+  
+  .ql-container.ql-snow {
+    height: auto !important;
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .notescreatedby p {
+    color: white;
+    /* color: black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .noteButton {
+    background: #9de298;
+    margin-top: 10px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+   .noteButton:hover {
+    opacity: 0.9;
+  }
+
+
+
+  .delete-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .notesjsmessage{
+    margin-bottom: 20px;
+    /* color: white; */
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .delete-modal-content {
+    /* background-color: black; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .confirm-delete {
+    background-color: rgb(239, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .cancel-delete {
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  } 
+
+  .mynotesmessage {
+    color: white;
+    /* color: black; */
+  }
+
+  .ql-editor p {
+     color: white;
+    /* color: black; */
+  }
+
+  .deletenOTEButton{
+    background-color: rgb(239, 10, 10);
+    border: none;
+    padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  }
+
+  .ql-snow .ql-stroke {
+    fill: black;
+    stroke: white;
+    color: white;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.ql-snow .ql-picker-label::before {
+    display: inline-block;
+    line-height: 22px;
+    color: white;
+}
+
+.notes-panelquiz {
+    margin-top: 110px;
+    /* padding: 15px; */
+    padding: 20px;
+    width: 103%;
+    background-color: #111010;
+    /* background-color: black; */
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

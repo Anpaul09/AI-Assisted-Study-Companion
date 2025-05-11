@@ -1,0 +1,186 @@
+.payment-history-container {
+  max-width: 8000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.subscription-status, 
+.payment-form-container, 
+.transactions-container {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h1, h2 {
+  color: #fff;
+  margin-top: 0;
+}
+
+p {
+  color: #ddd;
+}
+
+.make-payment-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.make-payment-button:hover {
+  background-color: #2980b9;
+}
+
+.payment-form {
+  background-color: #333;
+  padding: 200px;
+  border-radius: 60px;
+  margin-top: 150px;
+}
+
+.payment-form-container {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;  /* Ensure full width */
+  max-width: 600px; /* But limit maximum width */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-row {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+/* Target Stripe element container */
+.card-element-container {
+  border: 1px solid #555;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #444;
+  height: 40px; /* Fixed height */
+  min-height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Target Stripe elements directly */
+.StripeElement {
+  height: 40px;
+  width: 100%;
+  padding: 10px;
+  background-color: #444;
+  color: #e4e4e4;
+}
+
+/* Make sure iframe within Stripe elements has proper sizing */
+.StripeElement iframe {
+  height: 40px !important;
+  min-height: 40px !important;
+  width: 100% !important;
+}
+
+/* Ensure the inner elements are visible */
+.__PrivateStripeElement {
+  height: auto !important;
+  min-height: 40px !important;
+  width: 100% !important;
+}
+
+/* Add specific styling for the card element */
+#card-element.StripeElement {
+  display: block !important;
+  height: 40px !important;
+  min-height: 40px !important;
+}
+
+.pay-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pay-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pay-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.card-error {
+  color: #ff5252;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.payment-success {
+  color: #4CAF50;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.test-card-info {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 4px;
+  color: #ddd;
+}
+
+.test-card-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.transactions-list {
+  margin-top: 15px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #333;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.transaction-status.success {
+  color: #4CAF50;
+}
+
+.transaction-status.pending {
+  color: #FFD700;
+}
+
+.transaction-status.failed {
+  color: #ff5252;
+}
+
+.no-transactions {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+}

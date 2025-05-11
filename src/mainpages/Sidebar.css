@@ -1,0 +1,165 @@
+.sideBarMain {
+  display: flex;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.sideBar {
+  height: calc(100vh - 100px); 
+  background-color: #1e1e1e;
+  color: #37E9FB;
+  position: fixed;
+  display: flex;
+  top: 95px;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0 4px rgba(10, 10, 10, 0.2);
+  transition: width 0.5s ease-in-out;
+  padding-top: 23px;
+  width: 80px; 
+  overflow-y: auto;
+  z-index: 1000; 
+}
+
+.sideBar.open {
+  width: 280px; 
+}
+
+.sideBar.close {
+  width: 80px;
+  background-color: transparent;
+  box-shadow: none; 
+}
+
+.switchButton {
+  background: none;
+  border: none;
+  color: rgba(224, 220, 220, 0.937);
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  transition: transform 0.5s;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.allSideBarfunctionality {
+  list-style: none;
+  width: 100%;
+  margin-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sideBarfunctionality {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition: background 0.5s ease-in-out;
+  border-radius: 6px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.user-name {
+  position: sticky;
+  top: 0;
+  /* background-color: rgb(17, 18, 17); */
+  z-index: 1;
+  padding: 10px 0;
+}
+
+.sideBarfunctionalityIcon {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.sideBar.close .sideBarfunctionalityIcon {
+  margin: 0; 
+}
+
+.sideBarMain.open + .content {
+  margin-left: 300px;
+  transition: margin-left 0.5s ease-in-out; 
+}
+
+.sideBarMain.close + .content {
+  margin-left: 75px;
+  transition: margin-left 0.5s ease-in-out; 
+}
+
+.logout {
+  color: #a5dba6; 
+}
+
+/* .sideBar.close .switchButton {
+color: black; 
+} */
+
+/* Custom scrollbar */
+.sideBar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sideBar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sideBar::-webkit-scrollbar-thumb {
+  background: #37E9FB;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .sideBar.open {
+    height: calc(100vh - 71px);
+    width: 200px;
+    top: 71px;
+  }
+
+  .sideBarMain.open + .content {
+    margin-left: 220px;
+  }
+
+  .sideBarMain.close + .content {
+    margin-left: 80px;
+  }
+
+  .sideBarfunctionality {
+    padding: 8px 10px;
+  }
+
+  .sideBarfunctionalityIcon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sideBar.open {
+    width: 180px; 
+  }
+
+  .sideBarMain.open + .content {
+    margin-left: 200px;
+  }
+
+  .sideBarMain.close + .content {
+    margin-left: 60px; 
+  }
+
+  .sideBarfunctionality {
+    padding: 6px 8px; 
+  }
+
+  .sideBarfunctionalityIcon {
+    font-size: 14px; 
+  }
+}

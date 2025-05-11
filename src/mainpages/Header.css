@@ -1,0 +1,346 @@
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('../LoginHome/gotham-light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Base header styles */
+.headerdashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Gotham Light', Arial, sans-serif;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Logo and app name section */
+.headerdashboard-ourlogoourName {
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+}
+
+.headerdashboard-ourlogo img {
+  height: 24px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.headerdashboard-ourName_button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  font-family: 'Gotham Light', Arial, sans-serif;
+  padding: 0;
+}
+
+/* Navigation menu */
+.navigation-menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+  height: 100%;
+}
+
+.nav-item-container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  color: white;
+  background: transparent;
+  border: none;
+  padding: 0 15px;
+  height: 100%;
+  cursor: pointer;
+  font-family: 'Gotham Light', Arial, sans-serif;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-icon {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.nav-label {
+  margin-right: 4px;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  margin-left: 4px;
+  transition: transform 0.2s;
+}
+
+.dropdown-arrow.rotated {
+  transform: rotate(180deg);
+}
+
+/* Dropdown menus */
+.dropdown-container {
+  position: relative;
+  height: 100%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2d2d2d;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1010;
+}
+
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'Gotham Light', Arial, sans-serif;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-icon {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+/* Right section (search and profile) */
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Search bar */
+.mainHeaderSearchBar {
+  position: relative;
+  margin-right: 15px;
+  width: 250px;
+}
+
+.mainHeaderSearch {
+  width: 100%;
+  padding: 8px 12px 8px 30px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: white;
+  font-family: 'Gotham Light', Arial, sans-serif;
+}
+
+.mainHeaderSearchicon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+/* Profile section */
+.profile-container {
+  position: relative;
+  margin-left: 30px;
+}
+
+.profilePictureMain {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: #64dae5;
+}
+
+.profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-initial {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #2d2d2d;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1010;
+  margin-top: 8px;
+}
+
+.logout {
+  color: #ff6b6b;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .headerdashboard-ourName_button {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-label {
+    display: none;
+  }
+  
+  .nav-item {
+    padding: 0 10px;
+  }
+  
+  .dropdown-arrow {
+    margin-left: 0;
+  }
+  
+  .navigation-menu {
+    justify-content: flex-start;
+  }
+  
+  .mainHeaderSearchBar {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerdashboard-header {
+    padding: 0 10px;
+  }
+  
+  .headerdashboard-ourlogoourName {
+    min-width: auto;
+    flex-grow: 1;
+  }
+  
+  .headerdashboard-ourName_button {
+    font-size: 0.9rem;
+    max-width: 120px;
+  }
+  
+  .mainHeaderSearchBar {
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  .navigation-menu {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+  }
+  
+  .navigation-menu.active {
+    display: flex;
+  }
+  
+  .nav-item-container {
+    height: 40px;
+    width: 100%;
+  }
+  
+  .nav-item {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: flex-start;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .header-right {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .headerdashboard-ourlogo img {
+    height: 20px;
+  }
+  
+  .headerdashboard-ourName_button {
+    font-size: 0.8rem;
+    max-width: 100px;
+  }
+  
+  .mainHeaderSearchBar {
+    width: 120px;
+  }
+  
+  .mainHeaderSearch {
+    padding: 6px 10px 6px 28px;
+    font-size: 12px;
+  }
+  
+  .profilePictureMain {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainHeaderSearchBar {
+    display: none;
+  }
+  
+  .headerdashboard-ourName_button {
+    max-width: 80px;
+  }
+}
