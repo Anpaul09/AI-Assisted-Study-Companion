@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# AI-Assisted Study Companion 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the AI-Assisted Study Companion, a web-based platform designed to make studying more effective, personalized, and fun! Designed for students, educators, and lifelong learners.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+### 📚 Study Tools
+- **AI-Generated Flashcards**: Automatically generate flashcards from uploaded text or documents (PDF/DOC) using OpenAI's GPT-4o Mini or manually.
+- **AI-Generated Quizzes**: Create customized quizzes with instant explanations based on user content.
+- **AI-Generated Summarizer**: Summarize long-form content into concise key points with just one click.
+- **Study Planner**: Stay organized with a built-in planner tool.
+- **Note-Taking**: Take, save, and manage notes during quizzes or independently.
 
-### `npm start`
+### 🎮 Educational Games
+Learn while having fun with games like:
+- Category Sorting: Sort items into categories (powered by OpenAI).
+- Guess the Country Flag: Test geography knowledge.
+- Vocabulary Quiz: Test and expand your word knowledge.
+- Fact or Cap: True/false challenges.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔗 Collaboration & Sharing
+- Easily share quizzes and flashcards with classmates using links or social media.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 👤 User Management
+- Secure signup/login with Firebase Authentication.
+- Update profiles (name, password, profile picture).
+- Delete account with data cleanup.
 
-### `npm test`
+## 🛠️ Tech Stack
+- **Frontend**: React.js, Redux (for state management)
+- **Backend**: Firebase (Authentication, Realtime Database, Storage, Functions)
+- **AI Integration**: OpenAI GPT-4o Mini API
+- **Voice Input**: Web Speech API
+- **Testing**: Jest, Cypress, Firebase Emulator Suite
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
 
-### `npm run build`
+```
+AI-Study-Companion/
+├── Backend/                             # Firebase functions/emulators
+│   └── node_modules/
+├── Frontend/
+│   ├── public/                         # Static assets
+│   ├── src/
+│   │   ├── LoginHome/                  # Auth-related components
+│   │   ├── api/                        # API calls (OpenAI, Firebase)
+│   │   ├── components/                 # Reusable UI components
+│   │   ├── config/                     # Firebase/config files
+│   │   ├── games/                      # Game logic/components
+│   │   └── mainpages/                  # Core pages (Dashboard, Quizzes, Flashcards)
+├── node_modules/
+├── package-lock.json
+└── package.json
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
+- Node.js (v16+)
+- Firebase CLI (`npm install -g firebase-tools`)
+- OpenAI API key (for quiz/flashcard generation)
 
-### `npm run eject`
+### Installation
+1. Clone the repo
+   ```bash
+   git clone https://github.com/KToppers/AI-Study-Assistant.git
+   cd AI-Study-Assistant/Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Install dependencies
+   ```bash
+   npm install
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Set up Firebase:
+   - Create a project in [Firebase Console](https://console.firebase.google.com)
+   - Add your config in `src/config/firebase.js`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. Start the development server
+   ```bash
+   npm start
+   ```
 
 ### Deployment
+1. Build the project:
+   ```bash
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+2. Deploy to Firebase Hosting:
+   ```bash
+   firebase deploy
+   ```
 
-### `npm run build` fails to minify
+## 🌟 **Future Improvements**
+- Collaborative Study Groups: Real-time group study sessions
+- Mobile App: React Native integration
+- Offline Mode: Cache study materials for offline access
+- Progress Analytics: Visualize learning trends
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 👥 **Contributors**
+- **James Liu** – Documentation & QA
+- **Kleant Topalli** – Team Lead / Presentation
+- **Aniruddah Paul** – Backend Developer
+- **Eunice Shobowale** – Frontend Developer
+
+## **Support**
+For questions or support, contact:  
+📧 hq0895@wayne.edu  
+📞 313-312-3680
